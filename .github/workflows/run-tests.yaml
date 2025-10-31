@@ -26,10 +26,6 @@ jobs:
         
     - name: Run tests with pytest
       run: |
-        python -m pytest test.py -v --html=test-report.html
+        python -m pytest test.py 
         
-    - name: Upload test report
-      uses: actions/upload-artifact@v3
-      with:
-        name: test-report
-        path: test-report.html
+    
